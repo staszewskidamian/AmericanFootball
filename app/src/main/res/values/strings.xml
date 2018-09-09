@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">American Football Score Keeper</string>
+
+    <string name="about">Game info</string>
+    <string name="newGame">New game</string>
+    <string name="endGame">End game</string>
+    <string name="goalKick">K</string>
+    <string name="conversion">C</string>
+    <string name="fieldGoal">F</string>
+    <string name="safety">S</string>
+    <string name="touchdown">T</string>
+    <string name="teamRed">VISITORS</string>
+    <string name="teamBlue">HOME</string>
+
+    <string name="bGoalKick">Goal kick</string>
+    <string name="bConversion">Conversion</string>
+    <string name="bFieldGoal">Field Goal</string>
+    <string name="bSafety">Safety</string>
+    <string name="bTouchdown">Touchdown</string>
+    <string name="scored">0</string>
+    <string name="toast">T - Touchdown\nS - Safety\nC - Conversion\nF - Field Goal\nK - Goal kick  </string>
+
+
+</resources>

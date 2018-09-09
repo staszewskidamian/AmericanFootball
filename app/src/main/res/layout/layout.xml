@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="4dp"
+    tools:context="com.dmns.americanfootball.Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/teamNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                style="@style/teamNames"
+                android:rotation="180"
+                android:text="@string/teamRed"
+                android:textColor="@color/red" />
+
+            <TextView
+                style="@style/teamNames"
+                android:text="@string/teamBlue"
+                android:textColor="@color/blueSky" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/scoreBoardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <LinearLayout
+                android:id="@+id/redTeamPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+
+                    <TextView
+                        android:id="@+id/boardTouchdownRed"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardFieldRed"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardConversionRed"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardSafetyRed"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardKickRed"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:rotation="180">
+
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/touchdown" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/safety" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/conversion" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/fieldGoal" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/goalKick" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teamRedScore"
+                    style="@style/points"
+                    android:rotation="180"
+                    android:text="@string/scored" />
+
+
+                <TextView
+                    android:id="@+id/teamBlueScore"
+                    style="@style/points"
+                    android:text="@string/scored"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/blueTeamPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/touchdown" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/safety" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/conversion" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/fieldGoal" />
+
+                    <TextView
+                        style="@style/boardInfo"
+                        android:text="@string/goalKick" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/boardTouchdownBlue"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardSafetyBlue"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardConversionBlue"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardFieldBlue"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                    <TextView
+                        android:id="@+id/boardKickBlue"
+                        style="@style/scoredInfo"
+                        android:text="@string/scored" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/field" />
+
+            <Button
+                android:id="@+id/touchdownBlue"
+                style="@style/teamBlueButtons"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="12dp"
+                android:onClick="Score"
+                android:text="@string/bTouchdown" />
+
+
+            <Button
+                android:id="@+id/safetyRed"
+                style="@style/teamRedButtons"
+                android:layout_below="@+id/touchdownBlue"
+                android:layout_centerHorizontal="true"
+                android:onClick="Score"
+                android:text="@string/bSafety" />
+
+            <Button
+                android:id="@+id/conversionBlue"
+                style="@style/teamBlueButtons"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/safetyRed"
+                android:layout_marginEnd="55dp"
+                android:onClick="Score"
+                android:text="@string/bConversion" />
+
+            <Button
+                android:id="@+id/goalKickBlue"
+                style="@style/teamBlueButtons"
+                android:layout_below="@+id/conversionBlue"
+                android:layout_marginStart="99dp"
+                android:onClick="Score"
+                android:text="@string/bGoalKick" />
+
+            <Button
+                android:id="@+id/fieldGoalRed"
+                style="@style/teamRedButtons"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/goalKickBlue"
+                android:layout_marginEnd="66dp"
+                android:onClick="Score"
+                android:text="@string/bFieldGoal" />
+
+            <Button
+                android:id="@+id/fieldGoalBlue"
+                style="@style/teamBlueButtons"
+                android:layout_below="@+id/fieldGoalRed"
+                android:layout_marginStart="66dp"
+                android:onClick="Score"
+                android:text="@string/bFieldGoal" />
+
+            <Button
+                android:id="@+id/goalKickRed"
+                style="@style/teamRedButtons"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fieldGoalBlue"
+                android:layout_marginEnd="99dp"
+                android:onClick="Score"
+                android:text="@string/bGoalKick" />
+
+            <Button
+                android:id="@+id/conversionRed"
+                style="@style/teamRedButtons"
+                android:layout_below="@+id/goalKickRed"
+                android:layout_marginStart="55dp"
+                android:onClick="Score"
+                android:text="@string/bConversion" />
+
+            <Button
+                android:id="@+id/safetyBlue"
+                style="@style/teamBlueButtons"
+                android:layout_below="@+id/conversionRed"
+                android:layout_centerHorizontal="true"
+                android:onClick="Score"
+                android:text="@string/bSafety" />
+
+            <Button
+                android:id="@+id/touchdownRed"
+                style="@style/teamRedButtons"
+                android:layout_below="@+id/safetyBlue"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="36dp"
+                android:onClick="Score"
+                android:text="@string/bTouchdown" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
